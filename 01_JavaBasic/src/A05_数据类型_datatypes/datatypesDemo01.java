@@ -61,9 +61,9 @@ public class datatypesDemo01 {
 //        System.out.println(l);
         // 定义long类型 需要添加 L或者l 否则报错
         long l = 100000000L;
-        long l2 = 10000000l;
+//        long l2 = 10000000l;
         System.out.println(l);
-        System.out.println(l2);
+//        System.out.println(l2);
 
         // 定义float类型的变量
         float f = 13.14F;
