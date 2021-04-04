@@ -5,6 +5,7 @@ import java.util.Scanner;
 /*
     从键盘读入个数不确定的整数，并判断读入的正数和负数的个数，输入为0时结束程序。
  */
+
 public class WhileTest04_判断正负数个数 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
