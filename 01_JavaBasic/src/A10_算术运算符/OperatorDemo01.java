@@ -67,5 +67,22 @@ public class OperatorDemo01 {
         int b4 = a4--; // 先运算(a4赋值给b4) b4 = a4 = 10 ,a4再自减 -1 (10-1=9)
         System.out.println("a4 = " + a4 + ": b4 = " + b4);
 
+        int a = 3;
+        int b = 4;
+
+        System.out.println(a + b);// 7
+        System.out.println(a - b);// -1
+        System.out.println(a * b);// 12
+        System.out.println(a / b);// 计算机结果是0，为什么不是0.75呢？
+        System.out.println(a % b);// 3
+
+        System.out.println(5%2);//1
+        System.out.println(5%-2);//1
+        System.out.println(-5%2);//-1
+        System.out.println(-5%-2);//-1
+        //商*除数 + 余数 = 被除数
+        //5%-2  ==>商是-2，余数时1    (-2)*(-2)+1 = 5
+        //-5%2  ==>商是-2，余数是-1   (-2)*2+(-1) = -4-1=-5
+
     }
 }
