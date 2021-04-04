@@ -33,5 +33,36 @@ public class IdentifierTest {
         System.out.println(myNumber);
         int myNumber2 = 2000;
         System.out.println(myNumber2);
+
+        // 按照标识符规则，正确声明变量
+        int age = 10;
+        String studentName = "tom";
+        int age2 = 15;
+        int student_age = 13;
+        int $systemInfo = 555;
+
+        System.out.println(age);
+        System.out.println(studentName);
+        System.out.println(age2);
+        System.out.println(student_age);
+        System.out.println($systemInfo);
+
+        // 违反标识符规则声明变量的举例
+        // 例子1：使用的%不属于允许使用的范围
+        // int age%me = 5;
+
+        // 例子2：不能以数字开头
+        // int 2age = 50;
+
+        // 例子3：不能包含空格
+        // int age student = 33;
+
+        // 例子4：严格区分大小写
+        // int salary = 10;
+        // System.out.println(Salary);
+
+        // 违反标识符规范声明变量举例：
+        int STUDENT_AGE = 10;
+        System.out.println(STUDENT_AGE);
     }
 }
