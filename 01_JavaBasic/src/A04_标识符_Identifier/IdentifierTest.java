@@ -23,6 +23,9 @@ package A04_标识符_Identifier;
 4.
 注意1：在起名字时，为了提高阅读性，要尽量有意义，“见名知意”。
 注意2：java采用unicode字符集，因此标识符也可以使用汉字声明，但是不建议使用。
+
+5.
+    可以参考阿里的代码规范书
 */
 public class IdentifierTest {
     public static void main(String[] args) {
