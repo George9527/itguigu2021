@@ -11,10 +11,13 @@ public class RecursionTest {
         // 例1：计算1-100之间所有自然数的和
         // 方式一：
         int sum = 0;
+
         for (int i = 1; i <= 100; i++) {
             sum += i;
         }
+
         System.out.println(sum);
+
         // 方式二：
         RecursionTest test = new RecursionTest();
         int sum1 = test.getSum(100);
