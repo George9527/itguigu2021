@@ -14,7 +14,7 @@ public class Demo {
         //子类要先继承父类才能调用父类的方法
         z.show();
 
-        // 使用匿名对象
+        // 可以使用匿名对象
         new Zi().show();
     }
 }
