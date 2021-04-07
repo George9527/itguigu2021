@@ -14,7 +14,7 @@ public abstract class Animal {
     // 给抽象类新建具体方法
     public void show() {
         //给 age 重新赋值
-        age = 40;
+//        age = 40;
         System.out.println(age);
 
         // city = "上海"; --- 会报错
@@ -23,6 +23,8 @@ public abstract class Animal {
         //给 home 重新赋值
         home = "湖南";
         System.out.println(home);
+
+        System.out.println("Age:" + age);
     }
 
     //新建抽象方法
@@ -33,6 +35,14 @@ public abstract class Animal {
 
     //带参构造方法
     public Animal(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
         this.age = age;
     }
 }
