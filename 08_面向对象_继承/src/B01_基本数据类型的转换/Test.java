@@ -1,5 +1,10 @@
 package B01_基本数据类型的转换;
 
+/*
+    注意：
+        类型转换只能在 父类以及继承的子类直接转换
+        子类余子类之间不能相互转换
+ */
 public class Test {
 
     public static void main(String[] args) {
