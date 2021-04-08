@@ -1,4 +1,4 @@
-package day10;
+package day10_老师与学生;
 /*
 定义一个抽象类Person，有name,age,sex三个属性，
     创建构造函数，给这三个属性赋值，

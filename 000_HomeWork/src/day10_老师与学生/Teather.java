@@ -1,4 +1,4 @@
-package day10;
+package day10_老师与学生;
 /*
     定义子类Teacher
  */
