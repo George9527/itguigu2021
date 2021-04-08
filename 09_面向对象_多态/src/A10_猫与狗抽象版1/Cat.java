@@ -1,24 +1,25 @@
-package A10_猫与狗抽象版;
+package A10_猫与狗抽象版1;
 /*
     任务：
-        新建一个狗类，继承动物类
+        新建一个猫类，继承动物类
     包含：
         1.构造方法：无参，带参
         2.成员方法：重建 eat(); 方法
  */
-public class Dog extends Animal{
+public class Cat extends Animal{
     //成员方法：重建 eat(); 方法
+
     @Override
     public void eat() {
-        System.out.println("狗吃肉");
+        System.out.println("猫吃鱼");
     }
 
     //构造方法：无参，带参
 
-    public Dog() {
+    public Cat() {
     }
 
-    public Dog(int age, String name) {
+    public Cat(int age, String name) {
         super(age, name);
     }
 }
