@@ -1,4 +1,4 @@
-package B02_instanceof_类型转换判断1;
+package B02_instanceof_类型转换判断;
 
 public class Animal {
 
