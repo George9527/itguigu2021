@@ -18,6 +18,6 @@ public class Computer {
     // 接口引用调用方法
     public void useUSB(USB usb) {
         usb.start();
-        usb.emd();
+        usb.end();
     }
 }
