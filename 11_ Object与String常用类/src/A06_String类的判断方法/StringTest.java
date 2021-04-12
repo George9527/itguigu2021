@@ -4,6 +4,17 @@ package A06_String类的判断方法;
  * String类的判断方法
  */
 
+/*
+    > String类的判断类型的方法, 返回都是布尔类型
+
+- boolean equals(Object obj) 字符串之间的比较,两个字符串相同,返回true
+- boolean equalsIgnoreCase(String str ) 字符串之间的比较,两个字符串相同,返回true,忽略大小写
+- boolean startWith(String str)判断字符串是否以另一个字符串开头,是开头就返回true
+- boolean endsWith(String str)判断字符串是否以另一个字符串结尾,是结尾就返回true
+- boolean contains(String str) 判断字符串中是否包含另一个字符串,完全包含返回true
+- boolean isEmpty()判断字符串的长度是不是0,如果是0返回true
+ */
+
 public class StringTest {
     public static void main(String[] args) {
         stringMethod();
