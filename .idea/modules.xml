@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/09_面向对象_多态/09_面向对象_多态.iml" filepath="$PROJECT_DIR$/09_面向对象_多态/09_面向对象_多态.iml" />
       <module fileurl="file://$PROJECT_DIR$/10_面向对象_接口/10_面向对象_接口.iml" filepath="$PROJECT_DIR$/10_面向对象_接口/10_面向对象_接口.iml" />
       <module fileurl="file://$PROJECT_DIR$/11_ Object与String常用类/11_ Object与String常用类.iml" filepath="$PROJECT_DIR$/11_ Object与String常用类/11_ Object与String常用类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_StringBuilder/12_StringBuilder.iml" filepath="$PROJECT_DIR$/12_StringBuilder/12_StringBuilder.iml" />
       <module fileurl="file://$PROJECT_DIR$/SGG2021.iml" filepath="$PROJECT_DIR$/SGG2021.iml" />
     </modules>
   </component>
