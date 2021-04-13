@@ -1,4 +1,4 @@
-package A05_S;
+package A05_字符拼接升级;
 
 /*
     需求：
@@ -23,7 +23,7 @@ public class StringBuilderTest01 {
         String s = arrayToString(arr);
 
         //输出结果
-        System.out.println(":" + s);
+        System.out.println("S:" + s);
     }
 
     //定义一个方法，用于把 int 数组中的数据按照指定格式拼接成一个字符串返回。
