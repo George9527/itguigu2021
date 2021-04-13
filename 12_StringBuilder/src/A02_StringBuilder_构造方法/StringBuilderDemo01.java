@@ -24,5 +24,9 @@ public class StringBuilderDemo01 {
             sb.insert(0, "在指定的位置10，插入指定的字符串");// 在指定的位置10，插入指定的字符串
         }
         System.out.println("sb的内容:" + sb);
+
+        // 方法二
+        sb.append("添加字符串");
+        System.out.println("方法二sb： = " + sb);
     }
 }
