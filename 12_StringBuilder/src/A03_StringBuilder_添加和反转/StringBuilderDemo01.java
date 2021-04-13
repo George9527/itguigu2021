@@ -17,6 +17,7 @@ public class StringBuilderDemo01 {
         System.out.println("SB:" + sb);
         System.out.println("SB2:" + sb2);
         System.out.println(sb == sb2);
+        System.out.println("重新赋值后SB:" + sb);
 
         sb.append("hello");
         sb.append("world");
