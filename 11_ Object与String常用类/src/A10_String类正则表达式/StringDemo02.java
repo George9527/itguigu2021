@@ -2,6 +2,7 @@ package A10_String类正则表达式;
 
 /*
     String类的方法replaceAll
+        String类中正则表达式的替换方法
  */
 
 public class StringDemo02 {
