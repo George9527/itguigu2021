@@ -7,6 +7,26 @@ package A06_选择排序优化;
  *      用索引
  *  遍历整个数组，找出元素的最小值并排在数组的前面
  */
+
+/*
+    格式：
+
+    public static void bubbleSort(int[] arr){
+        //外循环,次数固定的
+        for (int i = 0 ; i < arr.length ; i++){
+            //内循环,每次都要进行递减操作
+            for (int j = 0 ; j < arr.length - i - 1; j++){ //j 0-6
+                //比较换位
+                if (arr[j] > arr[j + 1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+    }
+ */
+
 public class selectSort {
     public static void main(String[] args) {
 
