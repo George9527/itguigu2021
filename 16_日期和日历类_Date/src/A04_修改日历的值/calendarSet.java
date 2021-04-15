@@ -21,6 +21,10 @@ public class calendarSet {
 
         // 重新设置当前时间 --- 注意这里的月份 系统月份范围 0-11
         calendar.set(2021,6 - 1,30);
+
+        //设置某一个字段 这里仅设置 日
+//        calendar.set(Calendar.DAY_OF_MONTH,30);
+
         // 输出修改后的日期
         System.out.println( calendar.get(Calendar.YEAR)+"年" + (calendar.get(Calendar.MONTH) +1)+"月" +
                 calendar.get(Calendar.DAY_OF_MONTH)+"日" + calendar.get(Calendar.HOUR_OF_DAY)+"点" +
