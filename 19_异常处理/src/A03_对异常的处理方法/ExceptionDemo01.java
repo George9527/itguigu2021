@@ -19,8 +19,6 @@ public class ExceptionDemo01 {
             System.out.println(arr[3]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("你访问的数组索引不存在");
-            e.printStackTrace();
         }
-
     }
 }
