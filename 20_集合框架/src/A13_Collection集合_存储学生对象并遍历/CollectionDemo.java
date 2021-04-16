@@ -37,7 +37,7 @@ public class CollectionDemo {
         Iterator<Student> it = c.iterator();
         while (it.hasNext()) {
             Student s = it.next();
-            System.out.println(s.getName() + ":" + s.getName());
+            System.out.println(s.getName() + ":" + s.getAge());
        }
     }
 }
