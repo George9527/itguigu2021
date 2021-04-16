@@ -32,7 +32,7 @@ public class stringToInt {
         //public static String valueOf (int i)
         String s2 = String.valueOf(num1);
         System.out.println(s2);
-        System.out.println("通过String 的 方法来实现");
+        System.out.println("通过String的方法来实现");
 
         System.out.println("----------");
 
