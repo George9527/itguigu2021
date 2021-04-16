@@ -2,6 +2,9 @@ package A08_多catch并行处理;
 /**
  *   myExec出现2个异常
  *   写2个catch分别捕获异常
+ *
+ *   多个catch处理异常的时候,写法特别注意 :
+ *      如果catch中的异常类没有关系,先写后写没有区别, catch中的异常类有继承关系,**父类写在最下面**
  */
 public class myExec {
     public static void main(String[] args) {
