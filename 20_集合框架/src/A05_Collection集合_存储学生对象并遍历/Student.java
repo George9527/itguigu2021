@@ -1,4 +1,4 @@
-package A13_Collection集合_存储学生对象并遍历;
+package A05_Collection集合_存储学生对象并遍历;
 
 public class Student {
     private String name;

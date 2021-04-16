@@ -1,4 +1,4 @@
-package A13_Collection集合_存储学生对象并遍历;
+package A05_Collection集合_存储学生对象并遍历;
 
 import java.util.ArrayList;
 import java.util.Collection;
