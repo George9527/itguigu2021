@@ -1,0 +1,16 @@
+ArrayList集合的特点
+
+  ArrayList类实现接口List,ArrayList具备了List接口的特性 **(有序,重复,索引)**
+
+- ArrayList集合底层的实现原理是数组,大小可变 (存储对象的时候长度无需考虑).
+- 数组的特点 : 查询速度快,增删慢.
+- 数组的默认长度是10个,每次的扩容是原来长度的1.5倍.
+
+- ArrayList是线程不安全的集合,运行速度快.
+
+ArrayList类成员变量
+private static final int DEFAULT_CAPACITY = 10; //默认容量
+ private static final Object[] EMPTY_ELEMENTDATA = {};//空数组
+ transient Object[] elementData; //ArrayList集合中的核心数组
+ private int size; //记录数组中存储个数
+ private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8; //数组扩容的最大值
