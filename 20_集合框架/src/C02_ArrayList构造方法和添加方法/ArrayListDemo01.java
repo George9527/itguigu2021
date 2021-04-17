@@ -26,6 +26,9 @@ public class ArrayListDemo01 {
         array.add("World");
         array.add("Test");
 
+        // 能否使用链式编程 --- 不能使用
+//        array.add("Test01").add("Test02");
+
         //public void add(int index,E element)：在此集合中的指定位置插入指定的元素
         array.add(2,"!!!");
         array.add(3,"Test01");
