@@ -1,4 +1,4 @@
-package A03_HashSet集合概述和特点;
+package D03_HashSet集合概述和特点;
 
 import java.util.HashSet;
 
@@ -29,6 +29,7 @@ public class HashSetDemo01 {
         hs2.add(110);
         hs2.add(120);
         hs2.add(119);
+        hs2.add(911);
 
         for (Integer integer : hs2) {
             System.out.println(integer);
