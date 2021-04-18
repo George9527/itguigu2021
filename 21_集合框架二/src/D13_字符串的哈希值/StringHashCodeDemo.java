@@ -1,6 +1,15 @@
 package D13_字符串的哈希值;
 
 //字符串String对象的哈希值
+
+/*
+    3.5 哈希值的相关问题
+  问题 : 两个对象A,B    两个对象哈希值相同,equals方法一定返回true吗?
+  两个对象A,B   两个对象equals方法返回true,两个对象的哈希值一定相同吗
+> 结论 : 两个对象的哈希值相同,不要求equals一定返回true. 两个对象的equals返回true,像个对象的哈希值必须一致
+
+Sun 公司官方规定 : 上面的结论
+ */
 public class StringHashCodeDemo {
     public static void main(String[] args) {
 
