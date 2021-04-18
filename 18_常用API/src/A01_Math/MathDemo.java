@@ -28,7 +28,9 @@ public class MathDemo {
         System.out.println(Math.max(66,88));
         System.out.println("--------");
 
-        //public static int min​(int a,int b)：返回两个int值中的较小值(自学)
+        //public static int min​(int a,int b)：返回两个int值中的较小值
+        System.out.println(Math.min(4,90));
+        System.out.println("--------");
 
         //public static double pow​(double a,double b)：返回a的b次幂的值
         System.out.println(Math.pow(2.0,3.0));
