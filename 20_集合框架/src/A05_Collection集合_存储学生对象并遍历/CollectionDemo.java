@@ -38,6 +38,8 @@ public class CollectionDemo {
         while (it.hasNext()) {
             Student s = it.next();
             System.out.println(s.getName() + ":" + s.getAge());
+            String tostring = s.toString();
+            System.out.println(tostring);
        }
     }
 }

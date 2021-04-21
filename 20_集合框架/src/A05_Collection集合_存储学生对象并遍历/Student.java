@@ -27,4 +27,9 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "Student类中重写的toString[" + "姓名：" + name + "  年龄：" + age + "]";
+    }
 }
