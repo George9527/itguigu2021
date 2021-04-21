@@ -12,6 +12,11 @@ package A03_设置和捕获线程名称;
         - run()方法和start()方法的区别？
             run()：封装线程执行的代码，直接调用，相当于普通方法的调用
             start()：启动线程；然后由JVM调用此线程的run()方法
+
+       实现接口的好处
+          接口实现好处是设计上的分离效果 : 线程要执行的任务和线程对象本身是分离的.
+          继承Thread重写方法run() : Thread是线程对象,run()是线程要执行的任务
+          实现Runnable接口 : 方法run在实现类,和线程无关,创建Thread类传递接口的实现类对象,线程的任务和Thread没有联系, 解开耦合性
  */
 
 public class MyThreadDemo {
