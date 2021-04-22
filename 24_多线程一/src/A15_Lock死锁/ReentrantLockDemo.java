@@ -29,6 +29,7 @@ public class ReentrantLockDemo {
         ThreadDeadLock threadDeadLock = new ThreadDeadLock(true);
         ThreadDeadLock threadDeadLock2 = new ThreadDeadLock(false);
 
+        // 这个方法也是可以的
 //        new Thread(threadDeadLock).start();
 //        new Thread(threadDeadLock2).start();
 
