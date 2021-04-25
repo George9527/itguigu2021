@@ -9,9 +9,9 @@ public class FileOutputStreamDemo05 {
     }
 
     /**
-     *  try catch异常处理 : close()写在finally
+     * try catch异常处理 : close()写在finally
      */
-    public static void write2()  {
+    public static void write2() {
         //提升作用域 : try外定义变量,try创建对象
         FileOutputStream fos = null;
         FileOutputStream fos2 = null;
@@ -24,26 +24,26 @@ public class FileOutputStreamDemo05 {
             fos.write(49);
             fos.write(48);
             fos.write(48);
-        }catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
-        }finally {
+        } finally {
             //释放资源
             try {
                 //流对象创建失败,fos变量的值是空,不能调用close
-                if(fos != null) {
+                if (fos != null) {
                     fos.close();
                 }
-            }catch (IOException ex){
+            } catch (IOException ex) {
                 ex.printStackTrace();
             }
 
             //释放资源
             try {
                 //流对象创建失败,fos变量的值是空,不能调用close
-                if(fos2 != null) {
+                if (fos2 != null) {
                     fos2.close();
                 }
-            }catch (IOException ex){
+            } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
@@ -51,9 +51,9 @@ public class FileOutputStreamDemo05 {
 
 
     /**
-     *  try catch异常处理 : close()写在finally
+     * try catch异常处理 : close()写在finally
      */
-    public static void write()  {
+    public static void write() {
         //提升作用域 : try外定义变量,try创建对象
         FileOutputStream fos = null;
         try {
@@ -64,16 +64,16 @@ public class FileOutputStreamDemo05 {
             fos.write(49);
             fos.write(48);
             fos.write(48);
-        }catch (IOException ex){
+        } catch (IOException ex) {
             ex.printStackTrace();
-        }finally {
+        } finally {
             //释放资源
             try {
                 //流对象创建失败,fos变量的值是空,不能调用close
-                if(fos != null) {
+                if (fos != null) {
                     fos.close();
                 }
-            }catch (IOException ex){
+            } catch (IOException ex) {
                 ex.printStackTrace();
             }
         }
