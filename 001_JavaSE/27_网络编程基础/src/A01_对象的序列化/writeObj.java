@@ -23,5 +23,6 @@ public class writeObj {
         Person person = new Person("张三",20);
         oos.writeObject(person);
         oos.close();
+
     }
 }
