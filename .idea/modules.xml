@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/000_HomeWork/000_HomeWork.iml" filepath="$PROJECT_DIR$/000_HomeWork/000_HomeWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/001_JavaSE/001_JavaSE.iml" filepath="$PROJECT_DIR$/001_JavaSE/001_JavaSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/00_Test/00_Test.iml" filepath="$PROJECT_DIR$/00_Test/00_Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/01_JavaBasic/01_JavaBasic.iml" filepath="$PROJECT_DIR$/01_JavaBasic/01_JavaBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_程序循环语句/02_程序循环语句.iml" filepath="$PROJECT_DIR$/02_程序循环语句/02_程序循环语句.iml" />
@@ -22,6 +23,16 @@
       <module fileurl="file://$PROJECT_DIR$/16_日期和日历类_Date/16_日期和日历类_Date.iml" filepath="$PROJECT_DIR$/16_日期和日历类_Date/16_日期和日历类_Date.iml" />
       <module fileurl="file://$PROJECT_DIR$/17_基本数据类型对象包装类/17_基本数据类型对象包装类.iml" filepath="$PROJECT_DIR$/17_基本数据类型对象包装类/17_基本数据类型对象包装类.iml" />
       <module fileurl="file://$PROJECT_DIR$/18_常用API/18_常用API.iml" filepath="$PROJECT_DIR$/18_常用API/18_常用API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19_异常处理/19_异常处理.iml" filepath="$PROJECT_DIR$/19_异常处理/19_异常处理.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20_集合框架/20_集合框架.iml" filepath="$PROJECT_DIR$/20_集合框架/20_集合框架.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21_集合框架二/21_集合框架二.iml" filepath="$PROJECT_DIR$/21_集合框架二/21_集合框架二.iml" />
+      <module fileurl="file://$PROJECT_DIR$/22_泛型Generic/22_泛型Generic.iml" filepath="$PROJECT_DIR$/22_泛型Generic/22_泛型Generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/23_Map集合/23_Map集合.iml" filepath="$PROJECT_DIR$/23_Map集合/23_Map集合.iml" />
+      <module fileurl="file://$PROJECT_DIR$/24_多线程一/24_多线程一.iml" filepath="$PROJECT_DIR$/24_多线程一/24_多线程一.iml" />
+      <module fileurl="file://$PROJECT_DIR$/25_IO流对象/25_IO流对象.iml" filepath="$PROJECT_DIR$/25_IO流对象/25_IO流对象.iml" />
+      <module fileurl="file://$PROJECT_DIR$/26_File类/26_File类.iml" filepath="$PROJECT_DIR$/26_File类/26_File类.iml" />
+      <module fileurl="file://$PROJECT_DIR$/27_网络编程/27_网络编程.iml" filepath="$PROJECT_DIR$/27_网络编程/27_网络编程.iml" />
+      <module fileurl="file://$PROJECT_DIR$/27_网络编程基础/27_网络编程基础.iml" filepath="$PROJECT_DIR$/27_网络编程基础/27_网络编程基础.iml" />
       <module fileurl="file://$PROJECT_DIR$/SGG2021.iml" filepath="$PROJECT_DIR$/SGG2021.iml" />
     </modules>
   </component>
