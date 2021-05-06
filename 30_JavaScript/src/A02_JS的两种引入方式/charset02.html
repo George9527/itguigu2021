@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内部引入方式</title>
+</head>
+<body>
+<!--
+        第一种引入方式: 内部引入方式，在HTML文档内部，通过script标签去编写js代码
+    -->
+<!--
+    第二种引入方式: 外部引入方式，在当前项目中创建一个js文件，然后在需要引入的HTML里面使用script标签引入
+    一个script标签要么负责编写内部的js代码，要么负责引入外部的js文件
+-->
+
+<script type="text/javascript">
+    // 写一个内部的js
+    function showMessage() {
+        alert("内部JS方法")
+    }
+
+    // 调用内部的JS方法
+    showMessage()
+
+    // 方法二：
+    alert("hello world")
+
+</script>
+</body>
+</html>
