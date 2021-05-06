@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置函数</title>
+</head>
+<body>
+<script>
+    // 弹出警告窗
+    alert("弹出警告框")
+
+    // 弹出确认框
+    var result = confirm("确实要删除吗？");
+
+    if (result) {
+        // 删除处理的代码块
+        alert("已删除！")
+    } else {
+        alert("撤销删除操作!")
+    }
+
+    // 在控制台打印日志
+    // 语法： console.log("日志内容");
+
+
+    // 弹出确认框的案例
+    var result02 = confirm("老板，你真的不加个钟吗？");
+
+    if(result02) {
+        console.log("老板点了确定，表示要加钟");
+    }else{
+        console.log("老板点了确定，表示不加钟");
+    }
+</script>
+</body>
+</html>

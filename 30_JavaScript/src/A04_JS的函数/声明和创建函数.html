@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>声明和创建函数</title>
+</head>
+<body>
+<script>
+
+    //声明函数的两种方式:1. 命名函数(普通函数)
+    //JS中声明函数的特点: 1. 没有返回值类型  2. 没有参数
+
+    // 声明函数就是使用者自己定义一个函数，它有两种写法:
+
+    // 写法一：
+    function sum(a,b) {
+        return a + b;
+    }
+
+    // 写法二：
+    var sum2 = function () {
+        return c + d;
+    }
+
+    // 调用函数
+    var result = sum(2, 3);
+    console.log("result="+result);
+    var totalResult = sum2(3,6);
+    console.log("totalResult="+totalResult);
+
+
+    // 匿名函数: 就是声明函数的时候不取名，匿名函数有自己独特的使用场景
+    // function (参数列表...){}
+    // 通常情况下，匿名函数的使用场景可以用在事件绑定或者作为其他函数的参数传入
+    var test = function (a,b) {
+        return a + b;
+    }
+    // 通过声明一个变量来接收 匿名函数 的处理结果
+    // function 后面没有声明这个函数的具体名字
+
+
+</script>
+</body>
+</html>
