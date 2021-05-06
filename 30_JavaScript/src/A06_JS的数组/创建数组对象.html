@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建数组对象</title>
+</head>
+<body>
+<script>
+    //1. 创建一个数组,JS中的数组长度不是固定的,并且存放的数据类型也不是固定的
+    var arr01 = new Array();
+
+    // 2.压入数据
+    arr01.push("apple");
+    arr01.push("orange");
+    arr01.push("banana");
+    arr01.push("grape");
+
+    // 创建数组 方法二： 【常用】
+    var arr = [1,2,3,"a","奥拉夫"]
+    // 添加元素 --- 通过索引
+    arr[5] = "奥巴马"
+    arr[6] = "奥观海"
+
+    //reverse方法是将数组中的内容进行反转
+    arr01.reverse()
+
+    // 5.数组元素拼接成字符串
+    var arrStr = arr01.join(",");
+    console.log(arrStr);
+
+    //join方法是将数组中的元素通过分隔符拼接成一个字符串
+    //console.log(arr.join("&"))
+
+    //字符串也有一个方法，可以通过分隔符拆分成数组，这个方法就是split
+    /*
+    var str = arr.join("&");
+    var arr2 = str.split("&");
+    console.log(arr2)
+    */
+
+    //pop方法是弹出数组中的最后一个元素
+    console.log(arr.pop())
+
+    // 3.遍历数组
+    for (var i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+
+
+</script>
+</body>
+</html>
