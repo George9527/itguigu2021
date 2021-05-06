@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON的概述</title>
+</head>
+<body>
+<script>
+    /*
+        JSON格式的用途：
+            在开发中凡是涉及到跨平台数据传输JSON格式一定是首选。
+        JSON格式的说明：
+            JSON数据两端要么是{}，要么是[]
+            {} 定义JSON对象
+            [] 定义JSON数组
+        JSON对象的格式是：
+            {key:value,key:value,...,key:value}
+        JSON数组的格式是：
+            [value,value,...,value]
+            key的类型固定是字符串
+            value的类型可以是：
+                基本数据类型
+                引用类型：JSON对象或JSON数组
+       总结：
+            正因为JSON格式中value部分还可以继续使用JSON对象或JSON数组，
+            所以JSON格式是可以【多层嵌套】的，
+            所以JSON格式不论多么复杂的数据类型都可以表达。
+     */
+
+
+    //json的格式: {key:value,key:value}
+    var person1 = {
+        "name": "郭富城",
+        "age": "32",
+        "address": "HK"
+    }
+    console.log(person1)
+
+    var person2 = {
+        "name": "刘德华",
+        "age": "35",
+        "address": "HK",
+        // 多层嵌套
+        "friend": {
+            "name": "黎明",
+            "age": "21",
+            "address": "HK"
+        }
+    }
+    console.log(person2)
+    console.log(person2.friend.name)
+
+    //json数组的格式: [{key:value,key:value},{key:value,key:value}]
+    var person3 = {
+        "name":"张三疯",
+        "age":189,
+        "address":"武当山",
+        "wife":{
+            "name":"小花",
+            "age":18,
+            "address":"武当山下的小村庄"
+        },
+        "sons":[
+            {
+                "name":"奥巴马",
+                "age":1,
+                "address":"武当山"
+            },
+            {
+                "name":"奥拉夫",
+                "age":2,
+                "address":"少林寺"
+            }
+        ]
+    }
+
+    //var personList = [person1,person2]
+    var personList = [person1,person2,person3]
+    console.log(personList)
+
+</script>
+</body>
+</html>

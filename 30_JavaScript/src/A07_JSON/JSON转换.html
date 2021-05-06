@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON转换</title>
+</head>
+<body>
+<script>
+
+    // JSON对象转JSON字符串
+
+    // 新建一个数组
+    var person = {
+        "name": "Jack",
+        "age": "12",
+        "address": "China"
+    }
+
+    //person对于js而言是一个对象
+    //将JSON对象转成字符串
+
+    var personStr = JSON.stringify(person);
+    // 输出person的类型
+    console.log("JSON对象转JSON字符串: 转换前：" + typeof person);
+    console.log("JSON对象转JSON字符串: 转换后：" + typeof personStr);
+
+    // JSON字符串转JSON对象
+    //假设str是服务器端传输到我们客户端的,
+    // 我们在拿到服务器端传输过来的json字符串之后，需要将其转成JSON对象才能解析出数据
+    var personObj = JSON.parse(personStr);
+    console.log("JSON字符串转JSON对象: 转换前：" + typeof personStr);
+    console.log("JSON字符串转JSON对象: 转换后：" + typeof personObj);
+
+</script>
+</body>
+</html>
