@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This关键字的使用</title>
+</head>
+<body>
+<script>
+    //this关键字只有两种情况：
+        // - 在函数外面：this关键字指向window对象（代表当前浏览器窗口）
+        // - 在函数里面：this关键字指向调用函数的对象
+
+    // 直接打印this
+    // console.log(this);
+
+    var name = "周杰棍"
+    this.name = "双杰伦"
+    function showName(){
+        console.log(this.name)
+        console.log(name)
+    }
+    // 这里的name变量 被后面的this.name给覆写了
+
+    // 调用函数
+    showName()
+
+    // - 在函数里面：this关键字指向调用函数的对象
+    var obj1 = {
+        "name":"奥拉夫",
+        "showName":function () {
+            console.log(this.name)
+        }
+    }
+
+    obj1.showName()
+
+</script>
+</body>
+</html>
