@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JS/vue.js"></script>
+</head>
+<body>
+<!--而使用了双向绑定后，就可以实现：
+页面上数据被修改后，
+Vue对象中的数据属性也跟着被修改。-->
+
+<div id="app">
+    <!-- v-bind:属性名 效果是从Vue对象渲染到页面 -->
+    <!-- v-model:属性名 效果不仅是从Vue对象渲染到页面，而且能够在页面上数据修改后反向修改Vue对象中的数据属性 -->
+    <input type="text" v-model:value="vueValue" />
+
+    <p>{{vueValue}}</p>
+</div>
+
+<script>
+    // 新建一个Vue对象
+    var app = new Vue({
+        "el":"#app",
+        "data":{
+            "vueValue":"太阳当空照"
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定标签属性-单向属性绑定</title>
+    <script src="../JS/vue.js"></script>
+
+</head>
+<body>
+<div id="test">
+    <!--
+            目标使用vue绑定输入框的内容(其实就是input的value属性)
+            绑定属性的方式:
+            v-bind:属性名 = "要绑定的数据模型"
+            它还可以省略v-bind简写成 :属性名 = "要绑定的数据模型"
+            v-model:value="值" 可以简写成 v-model="值"
+        -->
+    <input type="text" v-bind:value="vueValueDemo"/>
+    <p>{{vueValueDemo}}</p>
+</div>
+
+<script>
+    var app = new Vue({
+        "el":"#test",
+        "data":{
+            "vueValueDemo":"太阳当空照"
+        }
+    });
+</script>
+</body>
+</html>
