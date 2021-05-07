@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素焦点</title>
+</head>
+<body>
+
+<!--获得焦点(onfocus)和失去焦点(onblur)需求:给输入框设置获得和失去焦点-->
+
+<input type="text" id="ipt" onfocus="fn1()">
+
+<script>
+    //目标: 给输入框绑定获取和失去焦点事件
+    //onfocus表示获取焦点
+    function fn1() {
+        console.log("获得焦点")
+    }
+
+    //onblur表示失去焦点
+    document.getElementById("ipt").onblur = function () {
+        console.log("失去焦点")
+    }
+</script>
+
+</body>
+</html>
