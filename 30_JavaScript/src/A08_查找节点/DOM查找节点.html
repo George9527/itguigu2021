@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM查找节点</title>
+</head>
+<body>
+
+    <input type="text" id="username">
+    <input type="text" class="c1">
+    <input type="text" id="c3">
+    <input type="text" class="c2">
+    <div>
+        <div></div>
+        <div></div>
+</div>
+
+<script>
+    // 在整个文档范围内查询元素节点
+
+    //根据id查询标签 返回值:一个具体的元素节
+    var elementById01 = document.getElementById("username")
+    var elementById02 = document.getElementById("c2")
+    console.log(elementById01)
+    // console.log(elementById02) // -- 根据ID值查询 null
+
+    // 根据标签名查询 返回值:元素节点数组
+    var elementsByTagName01 = document.getElementsByTagName("c1")
+    var elementsByTagName02 = document.getElementsByTagName("username")
+    console.log(elementsByTagName01)
+    // console.log(elementsByTagName02)
+
+    // 根据name属性值查询 返回值:元素节点数组
+    var elementsByName01 = document.getElementsByName("c2")
+    console.log(elementsByName01)
+
+    // 根据类名查询 返回值: 元素节点数组
+    var elementsByClassName = document.getElementsByClassName("c1")
+    console.log(elementsByClassName)
+
+    // 在具体元素节点范围内查找子节点
+
+    //查找子标签: children
+    var children = document.getElementsByTagName("body")[0].children;
+    console.log(children)
+
+    // 查找第一个子标签
+    var firstElementChild = document.getElementsByTagName("body")[0].firstElementChild;
+    console.log(firstElementChild)
+
+    // 查找最后一个子标签
+    var lastElementChild = document.getElementsByTagName("body")[0].lastElementChild;
+    console.log(lastElementChild)
+
+    // 查找指定元素节点的父节点
+
+    // 查找指定元素节点的父标签 element.parentElement --- 标签对象
+    //查找id为username的标签的父节点
+    var parentElement = document.getElementById("username").parentElement;
+    console.log(parentElement)
+
+    //查找id为 c3 的标签的前一个兄弟标签
+    var previousElementSibling = document.getElementById("c3").previousElementSibling;
+    console.log(previousElementSibling)
+
+    // 扩展内容(根据选择器查找标签)
+    // 根据选择器查找一个标签
+
+    //查找id为username的标签，使用的是id选择器
+    // document.querySelector("选择器") --- 标签对象
+    var ipt1 = document.querySelector("#username");
+    console.log(ipt1)
+
+    //查找body内的所有后代div，用的是层级选择器
+    var ipt2 = document.querySelectorAll("body div");
+    console.log(ipt2)
+
+    //查找id为username的标签的后面第一个兄弟
+    var i1 = document.querySelector("#username + input");
+    console.log(i1)
+
+    // 查找id为username的标签的后面的所有兄弟
+    var i2 = document.querySelectorAll("#username ~ input");
+    console.log(i2)
+
+</script>
+</body>
+</html>
