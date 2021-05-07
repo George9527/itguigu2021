@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change事件的介绍</title>
+</head>
+<body>
+<!--内容改变(onchange) 需求: 给select设置内容改变事件-->
+
+<select onchange="changeCity(this)">
+    <option value="bj">北京</option>
+    <option value="sh">上海</option>
+    <option value="sz">深圳</option>
+</select>
+
+<script>
+    function changeCity(obj) {
+        console.log("城市改变了"+obj.value);
+    }
+</script>
+</body>
+</html>
