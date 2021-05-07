@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>键盘和鼠标事件</title>
+</head>
+<body>
+<input type="text"
+
+       onmouseover="fn1()"
+       onmouseout="fn2()"
+       onkeydown="fn3(this)"
+       onkeyup="fn4(this)"
+       onkeypress="fn5(this)"
+>
+
+<script>
+    // onmouseover是鼠标移入事件
+    function fn1() {
+        console.log("鼠标移到某元素之上")
+    }
+
+    // onmouseout是鼠标移出事件
+    function fn2() {
+        console.log("鼠标从某元素移开")
+    }
+
+    // onkeydown 是键盘按键按下事件，此时该键盘的字符并未进入输入框
+    function fn3() {
+        console.log("某个键盘按键被按下")
+    }
+
+    // onkeyup 是键盘按键抬起事件，此时该键盘的字符已经进入输入框了
+    function fn4() {
+        console.log("某个键盘按键被松开")
+    }
+
+    // onkeypress 是键盘按键按住事件，此时该键盘的字符已经进入输入框了
+    function fn5() {
+        console.log("某个键盘按键被按住")
+    }
+
+
+</script>
+</body>
+</html>
