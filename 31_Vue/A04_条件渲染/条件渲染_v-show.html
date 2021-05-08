@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件渲染 V-show</title>
+    <script src="../JS/vue.js"></script>
+</head>
+<body>
+<!--
+v-if与v-show的区别:
+相同点：v-if与v-show都可以动态控制dom元素显示隐藏
+不同点：v-if显示隐藏是将dom元素整个添加或删除
+      而v-show隐藏则是为该元素添加css--display:none，dom元素还在
+        -->
+<div id="app">
+    <h1>V-Show</h1>
+    <h1 v-show="flag">True输出</h1>
+</div>
+<script>
+    var app = new Vue({
+        "el":"#app",
+        "data":{
+            "flag":false
+        }
+    })
+</script>
+</body>
+</html>
