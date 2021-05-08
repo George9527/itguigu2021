@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件渲染-if-else</title>
+    <script src="../JS/vue.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+    <h1>if/else</h1>
+    <h1 v-if="awesome">Vue is awesome!</h1>
+    <h1 v-else="awesome">Oh no 😢</h1>
+</div>
+
+<script>
+    var vue = new Vue({
+        el:"#app",
+        "data":{
+            awesome:false
+        }
+    })
+</script>
+</body>
+</html>

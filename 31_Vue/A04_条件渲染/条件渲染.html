@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>条件渲染-if</title>
+    <script src="../JS/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-if = "have">😊</div>
+    <div v-if = "!have">😂</div>
+</div>
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            have: false
+        }
+    })
+</script>
+</body>
+</html>
